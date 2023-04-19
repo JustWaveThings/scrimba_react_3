@@ -53,6 +53,11 @@ body {
 	margin-top: 20px;
 }
 
+.facts > li::marker {
+	font-size: 1.4rem;
+	color: #61dafb;
+}
+
 .factContainer {
 	margin-left: 27px;
 }
