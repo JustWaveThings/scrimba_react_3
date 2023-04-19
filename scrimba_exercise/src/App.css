@@ -1,3 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
 .App {
 	font-family: 'Inter', sans-serif;
+}
+
+.Navbar {
+	display: flex;
+	align-items: center;
+	background-color: #21222a;
+	height: 91px;
+}
+
+.Navbar > img {
+	margin-left: 26px;
+	margin-right: 5px;
+}
+
+.Navbar > h2 {
+	margin-right: auto;
+	font-weight: 700;
+	color: #61dafb;
+}
+
+.Navbar > h3 {
+	color: #deebf8;
+	font-weight: 400;
+	margin-right: 27px;
 }
