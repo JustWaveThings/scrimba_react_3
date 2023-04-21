@@ -1,16 +1,22 @@
-function Navbar() {
+export default function Navbar(props) {
 	return (
-		<nav className="Navbar">
+		<nav className={props.darkMode ? 'dark' : ''}>
 			<img
+				className="nav--logo_icon"
 				src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
-				className="App-logo"
-				alt="logo"
-				height="28.93px"
 			/>
-			<h2>ReactFacts</h2>
-			<h3>React Course - Project 1</h3>
+			<h3 className="nav--logo_text">ReactFacts</h3>
+
+			<div className="toggler">
+				<p className="toggler--light">Light</p>
+				<div
+					className="toggler--slider"
+					onClick={props.toggleDarkMode}
+				>
+					<div className="toggler--slider--circle"></div>
+				</div>
+				<p className="toggler--dark">Dark</p>
+			</div>
 		</nav>
 	);
 }
-
-export default Navbar;
