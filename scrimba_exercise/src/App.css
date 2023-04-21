@@ -61,3 +61,11 @@ body {
 .factContainer {
 	margin-left: 27px;
 }
+
+.bgLogo {
+	opacity: 0.1;
+	scale: 175%;
+	position: absolute;
+	top: 40%;
+	right: 5%;
+}

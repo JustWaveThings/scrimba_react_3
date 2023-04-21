@@ -1,3 +1,4 @@
+import logo from '../assets/reactjs-icon 2.png';
 function Main() {
 	return (
 		<div className="main">
@@ -11,6 +12,10 @@ function Main() {
 					<li>Powers thousands of enterprise apps, including mobile apps</li>
 				</ul>
 			</div>
+			<img
+				className="bgLogo"
+				src={logo}
+			/>
 		</div>
 	);
 }
