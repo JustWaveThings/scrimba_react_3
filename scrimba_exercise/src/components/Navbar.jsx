@@ -1,10 +1,14 @@
+import React from 'react';
+
 export default function Navbar(props) {
+	console.log(props);
 	return (
 		<nav className={props.darkMode ? 'dark' : ''}>
 			<img
 				className="nav--logo_icon"
-				src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+				src="/reactIconSmall.png"
 			/>
+
 			<h3 className="nav--logo_text">ReactFacts</h3>
 
 			<div className="toggler">
